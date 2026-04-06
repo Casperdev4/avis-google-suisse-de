@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rl 'offres-positifs\\\\|offres-negatifs\\\\|offres-suppression\\\\|id=\"accueil\"\\\\|id=\"offres\"' *.html)",
+      "Bash(grep -rn 'href=\"#offres\"' *.html)",
+      "Bash(grep -rn '\"price\": \"239\"' *.html)",
+      "Bash(sed -i 's|<title>Google Bewertungen Kaufen - Google Bewertungen Kaufen</title>|<title>Google Bewertungen Kaufen Schweiz - Positive Bewertungen ab 99 CHF</title>|' index.html)",
+      "Bash(sed -i 's|<h1>Google Bewertungen Kaufen <br> Google Bewertungen Kaufen</h1>|<h1>Google Bewertungen Kaufen <br> Ihre Online-Reputation stärken</h1>|' index.html)"
+    ]
+  }
+}
